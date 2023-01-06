@@ -1,0 +1,77 @@
+/* PARALLAX
+--------------------- */
+.parallax_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1600px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.parallax_wrap .parallax_large {
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 200%;
+}
+
+.parallax_wrap .parallax_large .p_inner {
+    width: 100%;
+    height: 100%;
+    background: url("../images/shared/parallax_parts_large.png") repeat-y center top;
+    background-size: 100% auto;
+}
+
+.parallax_wrap .parallax_small {
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 200%;
+}
+
+.parallax_wrap .parallax_small .p_inner {
+    width: 100%;
+    height: 100%;
+    background: url("../images/shared/parallax_parts_small.png") repeat-y center top;
+    background-size: 100% auto;
+}
+
+.parallax_wrap .parallax_txt {
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 200%;
+}
+
+.parallax_wrap .parallax_txt .p_inner {
+    width: 100%;
+    height: 100%;
+    background: url("../images/shared/parallax_parts_text.png") repeat-y center top;
+    background-size: 100% auto;
+}
+
+@media screen and (max-width: 750px) {
+    .parallax_wrap {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .parallax_wrap .parallax_large .p_inner {
+        background: url("../images/shared/parallax_parts_large_sp.png") repeat-y center top;
+        background-size: 100% auto;
+    }
+
+    .parallax_wrap .parallax_small .p_inner {
+        background: url("../images/shared/parallax_parts_small_sp.png") repeat-y center top;
+        background-size: 100% auto;
+    }
+
+    .parallax_wrap .parallax_txt .p_inner {
+        background: url("../images/shared/parallax_parts_text_sp.png") repeat-y center top;
+        background-size: 100% auto;
+    }
+}

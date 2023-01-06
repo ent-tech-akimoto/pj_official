@@ -1,0 +1,310 @@
+@charset "UTF-8";
+.mv_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; }
+  .mv_bg .main_bg {
+    width: 100%;
+    height: 34.8958333333vw;
+    background: url("../../images/1st/cp/bg_pc.jpg") no-repeat center top;
+    background-size: 100% auto; }
+    @media (max-width: 768px) {
+      .mv_bg .main_bg {
+        height: 72.9166666667vw;
+        background: url("../../images/1st/cp/bg_sp.jpg") no-repeat center top;
+        background-size: 100% auto; } }
+  .mv_bg .gra {
+    position: absolute;
+    top: 34.8958333333vw;
+    z-index: 0;
+    width: 100%;
+    height: 13.0208333333vw;
+    background: #f0f;
+    background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%); }
+    @media (max-width: 768px) {
+      .mv_bg .gra {
+        top: 72.9166666667vw;
+        height: 26.0416666667vw; } }
+
+/*--------------------------------------*/
+#contents {
+  position: relative;
+  z-index: 1;
+  padding-top: 12.7604166667vw;
+  padding-bottom: 6.7708333333vw;
+  font-family: 'Noto Serif JP', "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: 600;
+  color: #444466; }
+  @media (max-width: 768px) {
+    #contents {
+      padding-top: 33.3333333333vw;
+      padding-bottom: 21.3541666667vw; } }
+  #contents h2.title {
+    width: 48.90625vw;
+    margin: 0 auto; }
+    @media (max-width: 768px) {
+      #contents h2.title {
+        width: 82.9427083333vw; } }
+  #contents .tit_line_gra {
+    margin: 2.0833333333vw auto 0;
+    width: 62.5vw;
+    height: 0.1041666667vw;
+    background: -moz-linear-gradient(left, rgba(68, 68, 102, 0) 0%, #444466 15%, #444466 85%, rgba(68, 68, 102, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(68, 68, 102, 0) 0%, #444466 15%, #444466 85%, rgba(68, 68, 102, 0) 100%);
+    background: linear-gradient(to right, rgba(68, 68, 102, 0) 0%, #444466 15%, #444466 85%, rgba(68, 68, 102, 0) 100%); }
+    @media (max-width: 768px) {
+      #contents .tit_line_gra {
+        margin-top: 5.2083333333vw;
+        width: 81.7708333333vw;
+        height: 0.2604166667vw; } }
+  #contents .sub_title {
+    margin: 1.8229166667vw auto 0;
+    width: 27.6041666667vw; }
+    @media (max-width: 768px) {
+      #contents .sub_title {
+        margin-top: 3.3854166667vw;
+        width: 55.46875vw; } }
+  #contents .main_txt {
+    margin-top: 6.09375vw;
+    text-align: center;
+    font-size: 2.1875vw;
+    line-height: 1.4; }
+    @media (max-width: 768px) {
+      #contents .main_txt {
+        margin-top: 11.4583333333vw;
+        font-size: 5.2083333333vw;
+        line-height: 1.48; } }
+  #contents .cont {
+    position: relative;
+    width: 52.6041666667vw;
+    margin: 0.8854166667vw auto 0; }
+    @media (max-width: 768px) {
+      #contents .cont {
+        width: 92.1875vw;
+        margin-top: 4.4270833333vw; } }
+    #contents .cont .box_wrap .box {
+      float: left;
+      width: 25.2604166667vw;
+      margin-top: 3.0208333333vw; }
+      @media (max-width: 768px) {
+        #contents .cont .box_wrap .box {
+          float: none;
+          width: 100%;
+          margin-top: 7.1614583333vw; } }
+      #contents .cont .box_wrap .box:nth-child(2n+1) {
+        margin-right: 2.0833333333vw; }
+        @media (max-width: 768px) {
+          #contents .cont .box_wrap .box:nth-child(2n+1) {
+            margin-right: 0; } }
+      #contents .cont .box_wrap .box .date {
+        border-top: 0.1041666667vw solid #444466;
+        border-left: 0.1041666667vw solid #444466;
+        padding: 0.390625vw 0 0 0.78125vw;
+        text-align: left;
+        font-size: 1.0416666667vw; }
+        @media (max-width: 768px) {
+          #contents .cont .box_wrap .box .date {
+            border-top: 0.5208333333vw solid #444466;
+            border-left: 0.5208333333vw solid #444466;
+            padding: 1.8229166667vw 0 0 2.34375vw;
+            font-size: 3.6458333333vw; } }
+      #contents .cont .box_wrap .box .img_border_top {
+        background: #444466;
+        width: 25.2604166667vw;
+        height: 0.625vw;
+        margin-bottom: 0.1041666667vw;
+        margin-top: 0.9375vw; }
+        @media (max-width: 768px) {
+          #contents .cont .box_wrap .box .img_border_top {
+            width: 92.1875vw;
+            height: 2.0833333333vw;
+            margin-bottom: 1.0416666667vw;
+            margin-top: 5.46875vw; } }
+      #contents .cont .box_wrap .box .img_border {
+        box-sizing: border-box;
+        width: 25.2604166667vw;
+        height: 17.2916666667vw;
+        border: 0.1041666667vw solid #444466;
+        border-top: 0.2083333333vw solid #444466;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto 17.2916666667vw; }
+        @media (max-width: 768px) {
+          #contents .cont .box_wrap .box .img_border {
+            border: 0.5208333333vw solid #444466;
+            border-top: 0.78125vw solid #444466;
+            width: 92.1875vw;
+            height: 63.28125vw;
+            background-size: auto 63.28125vw; } }
+        #contents .cont .box_wrap .box .img_border img {
+          vertical-align: bottom; }
+      #contents .cont .box_wrap .box .copy {
+        margin-top: 0.0520833333vw; }
+        @media (max-width: 768px) {
+          #contents .cont .box_wrap .box .copy {
+            text-align: right;
+            margin-top: 2.34375vw;
+            padding-right: 0.78125vw; } }
+        #contents .cont .box_wrap .box .copy .copytit {
+          float: left;
+          width: 7.34375vw; }
+          @media (max-width: 768px) {
+            #contents .cont .box_wrap .box .copy .copytit {
+              float: none;
+              display: inline-block;
+              width: 23.1770833333vw;
+              padding-top: 2.0833333333vw;
+              vertical-align: top; } }
+        #contents .cont .box_wrap .box .copy .author {
+          float: left;
+          font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'HiraKakuProN-W3', "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic", sans-serif;
+          font-weight: 400;
+          text-align: left;
+          padding-top: 0.3125vw;
+          padding-left: 1.09375vw;
+          width: 16.875vw;
+          font-size: 1.5625vw;
+          word-wrap: break-word;
+          word-break: break-all;
+          line-height: 1.3; }
+          @media (max-width: 768px) {
+            #contents .cont .box_wrap .box .copy .author {
+              float: none;
+              display: inline-block;
+              width: auto;
+              max-width: 67.1875vw;
+              padding-top: 0vw;
+              padding-left: 2.6041666667vw;
+              font-size: 4.4270833333vw; } }
+    #contents .cont .moreinfo {
+      width: 28.6458333333vw;
+      margin: 4.1666666667vw auto 0; }
+      @media (max-width: 768px) {
+        #contents .cont .moreinfo {
+          width: 84.375vw;
+          margin-top: 12.5vw; } }
+      #contents .cont .moreinfo a {
+        display: block;
+        background: #444466;
+        text-align: center;
+        height: 4.1666666667vw; }
+        @media (max-width: 768px) {
+          #contents .cont .moreinfo a {
+            height: 14.3229166667vw; } }
+        #contents .cont .moreinfo a .moreinfo_ss {
+          display: inline-block;
+          width: 12.0833333333vw;
+          padding-top: 0.9895833333vw; }
+          @media (max-width: 768px) {
+            #contents .cont .moreinfo a .moreinfo_ss {
+              width: 34.1145833333vw;
+              padding-top: 4.296875vw; } }
+        @media (min-width: 769px) {
+          #contents .cont .moreinfo a {
+            transition: background .2s; }
+            #contents .cont .moreinfo a:hover {
+              transition: background .2s;
+              background: #a2a2b3; } }
+
+/************************************
+	pop
+************************************/
+#wrapper {
+  position: relative; }
+
+#wrapper.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  overflow: hidden;
+  display: none; }
+  .modal img {
+    width: 100%;
+    height: auto; }
+  .modal .bg {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.97);
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
+  .modal .bg2 {
+    position: absolute;
+    background: rgba(255, 255, 0, 0);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
+  .modal .popBox {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    overflow: auto;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1;
+    display: none; }
+    @media (max-width: 768px) {
+      .modal .popBox {
+        width: 100%; } }
+    .modal .popBox .pop_inner {
+      position: relative;
+      width: 52.6041666667vw;
+      height: auto;
+      margin: 0 auto;
+      padding: 9.1145833333vw 0 9.1145833333vw; }
+      @media (max-width: 768px) {
+        .modal .popBox .pop_inner {
+          width: 92.1875vw;
+          padding: 26.0416666667vw 0 26.0416666667vw; } }
+      .modal .popBox .pop_inner .inner .img {
+        box-sizing: border-box;
+        width: 52.6041666667vw;
+        border: 0.0520833333vw solid #d5dce4;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: auto 100%; }
+        @media (max-width: 768px) {
+          .modal .popBox .pop_inner .inner .img {
+            border: 0.2604166667vw solid #d5dce4;
+            width: 92.1875vw; } }
+  .modal .mfp-close {
+    position: absolute;
+    display: block;
+    z-index: 100000;
+    top: 1.5625vw;
+    right: 0vw;
+    width: 5.6770833333vw;
+    height: 5.6770833333vw;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer; }
+    @media (max-width: 768px) {
+      .modal .mfp-close {
+        top: 7.5520833333vw;
+        right: 0vw;
+        width: 10.6770833333vw;
+        height: 10.6770833333vw; } }

@@ -1,0 +1,74 @@
+{
+    "musics": [
+        {
+            "title": "青く駆けろ！",
+            "lyricist": "まらしぃ",
+            "composer": "まらしぃ",
+            "unit": "virtualSinger",
+            "virtualSinger": "true"
+        },
+        {
+            "title": "自傷無色",
+            "lyricist": "ササノマリイ",
+            "composer": "ササノマリイ",
+            "unit": "virtualSinger",
+            "virtualSinger": "false"
+        },
+        {
+            "title": "Just Be Friends",
+            "lyricist": "Dixie Flatline",
+            "composer": "Dixie Flatline",
+            "unit": "leoneed",
+            "virtualSinger": "true"
+        },
+        {
+            "title": "シャルル",
+            "lyricist": "バルーン",
+            "composer": "バルーン",
+            "unit": "leoneed",
+            "virtualSinger": "true"
+        },
+        {
+            "title": "スイートマジック",
+            "lyricist": "Junky",
+            "composer": "Junky",
+            "unit": "moremore",
+            "virtualSinger": "false"
+        },
+        {
+            "title": "ツギハギスタッカート",
+            "lyricist": "とあ",
+            "composer": "とあ",
+            "unit": "vivid",
+            "virtualSinger": "false"
+        },
+        {
+            "title": "テオ",
+            "lyricist": "Sakurai",
+            "composer": "Omoi",
+            "unit": "vivid",
+            "virtualSinger": "false"
+        },
+        {
+            "title": "Tell Your World",
+            "lyricist": "kz（livetune）",
+            "composer": "kz（livetune）",
+            "unit": "wonder",
+            "virtualSinger": "false"
+        },
+        {
+            "title": "ドクター＝ファンクビート",
+            "lyricist": "nyanyannya",
+            "composer": "nyanyannya",
+            "unit": "wonder",
+            "virtualSinger": "true"
+        },
+        {
+            "title": "ネクストネスト",
+            "lyricist": "さつき が てんこもり",
+            "composer": "さつき が てんこもり",
+            "unit": "nightcord",
+            "virtualSinger": "false"
+        }
+    ]
+}

@@ -1,0 +1,204 @@
+@media screen and (min-width: 751px) {
+    header {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section {
+        margin: 0;
+    }
+}
+
+#fade {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+}
+
+#main-visual {
+    position: relative;
+    display: block;
+}
+
+#main-visual h1, #main-visual .mv-catch, #main-visual .mv-bnr {
+    position: absolute;
+}
+
+#main-visual .mv-logo, #main-visual .mv-catch {
+    opacity: 0;
+}
+
+#main-visual .bnr-slider-block {
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+@media screen and (min-width: 751px) {
+    #main-visual {
+        width: 100%;
+        height: 1420px;
+        margin: -76px 0 0;
+        overflow: hidden;
+    }
+
+    #main-visual::before {
+        display: block;
+        content: "";
+        background: url("../images/top/bg_pv_grade.png") repeat-x 0 0;
+        width: 100%;
+        height: 890px;
+        position: absolute;
+        bottom: -460px;
+        left: 0;
+        z-index: 2;
+    }
+
+    #main-visual .mv-video-container {
+        width: 1600px;
+        width: 100%;
+        min-width: 1600px;
+        height: 1360px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #main-visual .mv-video-container video {
+        width: 100%;
+    }
+
+    #main-visual .mv-catch {
+        width: 90px;
+        bottom: 635px;
+        right: 50%;
+        margin-right: -718px;
+    }
+
+    #main-visual .mv-bnr {
+        width: 430px;
+        bottom: 645px;
+        margin-left: 100px;
+    }
+
+    #main-visual .bnr-slider-block {
+        width: 100%;
+        padding: 20px 0 15px;
+        position: absolute;
+        bottom: 423px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main-visual .bnr-slider-block .bnr-slider {
+        overflow: hidden;
+        width: 1200px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #main-visual .bnr-slider-block .bnr-slider .slide .list {
+        float: left;
+        width: 280px;
+        margin: 0 10px;
+    }
+
+    #main-visual .bnr-slider-block .bnr-slider .slide .list img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #main-visual {
+        width: 100%;
+        height: 1320px;
+        padding-top: 990px;
+        margin: -130px 0 0;
+    }
+
+    #main-visual::before {
+        display: block;
+        content: "";
+        background: url("../images/top/bg_pv_grade_sp.png") no-repeat;
+        width: 750px;
+        height: 300px;
+        position: absolute;
+        bottom: 230px;
+        left: 0;
+        z-index: 2;
+    }
+
+    #main-visual .mv-video-container {
+        width: 101%;
+        height: 1090px;
+        position: absolute;
+        top: 0;
+        left: -1px;
+    }
+
+    #main-visual .mv-video-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    #main-visual h1 {
+        width: 90%;
+        bottom: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    #main-visual h1 img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #main-visual .mv-catch {
+        width: 450px;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #main-visual .mv-bnr {
+        width: 670px;
+        bottom: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 4;
+    }
+
+    #main-visual .bnr-slider-block {
+        width: 100%;
+        bottom: -167px;
+        padding: 20px 0 15px;
+    }
+
+    #main-visual .bnr-slider-block .bnr-slider {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #main-visual .bnr-slider-block .bnr-slider .slide {
+        margin-left: 25px;
+    }
+
+    #main-visual .bnr-slider-block .bnr-slider .slide .list {
+        float: left;
+        width: 330px !important;
+        margin: 0 10px;
+    }
+
+    #main-visual .bnr-slider-block .bnr-slider .slide .list img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}

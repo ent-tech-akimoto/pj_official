@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+#anthology header{
+  background: none;
+}
+
+
+
+
+/* * アンソロジー * */
+#anthology #page{
+  background:
+  url("../images/anthology/bg_mainvisual.png") no-repeat 50% 0/100% auto,
+  url("../images/anthology/bg_main.png");
+}
+
+@media print, screen and (max-width: 1920px) and (min-width: 751px){
+  #anthology #page{
+    background:
+    url("../images/anthology/bg_mainvisual.png") no-repeat 50% 0/auto,
+    url("../images/anthology/bg_main.png");
+  }
+}
+#anthology #special-section{
+  padding: 0 0 140px 0;
+  position: relative;
+}
+#anthology h2{
+  height: auto;
+  margin: 0 0 40px 0;
+}
+#anthology .art{
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  position: absolute;
+  top: 800px;
+  left: calc(50% + 320px);
+}
+#anthology .btn{
+  width: 420px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+#anthology .btn a{
+  display: block;
+  font-size: 24px;
+  line-height: 70px;
+  font-weight: bold;
+  color: #00ffdd;
+  font-family: 'Montserrat', sans-serif;
+  background: #444466;
+  transition: 0.3s;
+  border-radius: 50px;
+  letter-spacing: 0.1em;
+}
+#anthology .btn a::after{
+  opacity: 0.7;
+}
+#anthology .anthology-list {
+    width: 1000px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    }
+
+    #anthology .anthology-list li {
+      /* background: url("../images/system/bg_list.gif") #fff no-repeat center bottom; */
+      /* -ms-flex-preferred-size: 490px; */
+      flex-basis: 490px;
+      display: flex;
+      padding: 20px;
+      margin: 0 0 20px;
+      border: 2px solid #00ffdd;
+      cursor: pointer;
+      position: relative;
+      background:linear-gradient(180deg,rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 50%,rgba(237, 237, 240,0.7) 50%,rgba(237, 237, 240,0.7) 100%);
+      background-color:#fff;
+      transition: 0.3s;
+    }
+    #anthology .anthology-list li:hover {
+        /* opacity: 0.7; */
+        /* background:linear-gradient(180deg,#ffeff7 0%,#ffeff7 100%); */
+        /* background-color: #ffeff7; */
+        background-color: #ee80b9;
+        /* background: #ffeff7 no-repeat center bottom; */
+    }
+    #anthology .anthology-list li .thumb{
+      width: 168px;
+      height: 168px;
+      margin: 0 20px 0 0;
+    }
+    #anthology .anthology-list li .thumb img{
+      width: 100%;
+      height: auto;
+    }
+    #anthology .anthology-list li .detail .author{
+      margin: 0 0 4px 0;
+      font-size: 17px;
+      font-weight: 700;
+      color: #b7bdc4;
+      letter-spacing: 0.05em;
+    }
+    #anthology .anthology-list li .detail .name{
+      margin: 0 0 30px 0;
+      font-size: 30px;
+      font-weight: 700;
+      color: #444466;
+    }
+    #anthology .anthology-list li .detail .logo{
+      position: absolute;
+      top: 75%;
+      left: 208px;
+      transform: translateY(-50%);
+    }
+    /* #anthology .anthology-list li .detail .logo img{
+      width: 100%;
+      height: auto;
+    } */
+    /* #anthology .anthology-list li:nth-child(1) .logo{
+
+    } */
+
+    /* modal */
+    .showmodal{
+      overflow: hidden !important;
+    }
+    .showmodal .fix-sns-btn{
+      z-index: -1;
+    }
+    #anthology .modal {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgb(255,234,71,0.9);
+        /* background: rgba(255, 255, 255,0.9); */
+        z-index: 10000000;
+        overflow: hidden auto;
+    }
+    #anthology .modal .modal-container{
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      /* -ms-flex-pack: center;
+      justify-content: center; */
+      max-width: 800px;
+      /* height: 90%; */
+      margin: 0 auto;
+      padding: 30px 0;
+      position: relative;
+      /* overflow-y: scroll; */
+    }
+    #anthology .modal .modal-container .modal-header{
+      width: 600px;
+      margin: 0 auto 50px auto;
+      position: relative;
+    }
+    #anthology .modal .modal-container .modal-header .modal-close{
+      width: 30px;
+      height: 30px;
+      /* margin: 0 0 0 auto; */
+      position: fixed;
+      /* right: 0; */
+      right: calc(50% - 365px);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+      transition: 0.3s;
+      z-index: 1000;
+    }
+    #anthology .modal .modal-container .modal-header .modal-close:hover{
+      opacity: 0.7;
+    }
+    #anthology .modal .modal-container .modal-header .modal-close span{
+      width: 30px;
+      height: 1px;
+      background: #000;
+      display: block;
+    }
+    #anthology .modal .modal-container .modal-header .modal-close span:nth-child(1){
+      transform: rotate(-45deg);
+    }
+    #anthology .modal .modal-container .modal-header .modal-close span:nth-child(2){
+      transform: rotate(45deg);
+    }
+
+    #anthology .modal .modal-container .modal-content .top{
+      margin: 0 auto 40px auto;
+      position: relative;
+    }
+    #anthology .modal .modal-container .modal-content .top:after{
+      /* content: "";
+      width: 120px;
+      height: 2px;
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #444466; */
+    }
+    #anthology .modal .modal-container .modal-content .top .author{
+      /* margin: 0 0 40px 0; */
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #444466;
+      letter-spacing: 0.1em;
+    }
+    #anthology .modal .modal-container .modal-content .top .logo{
+      margin: 0 0 30px 0;
+      text-align: center;
+    }
+    #anthology .modal .modal-nav li{
+      width: 29px;
+      height: 46px;
+      background:url("../images/anthology/arrow.png") no-repeat 0/100% auto;
+      cursor: pointer;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      /* opacity: 0.6; */
+    }
+    #anthology .modal .modal-nav li.modal-nav-prev{
+      left: calc(50% - 380px);
+      transform: translateY(-50%) rotate(180deg);
+    }
+    #anthology .modal .modal-nav li.modal-nav-next{
+      right: calc(50% - 365px);
+    }
+    #anthology .modal .modal-nav li.modal-nav-disabled{
+      opacity: 0.1;
+      cursor: auto;
+    }
+
+    #anthology .anthology-image-list{
+      width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #anthology .anthology-image-list li{
+
+    }
+    #anthology .anthology-image-list li img{
+      width: 100%;
+      height: auto;
+    }
+    #anthology .anthology-image-list li + li{
+      margin: 30px 0 0 0;
+    }
+
+
+
+    /* #anthology .anthology-list li h4 {
+        font-size: 20px;
+        margin: 0 0 25px;
+    }
+
+    #anthology .img {
+        padding: 60px 0 35px;
+    } */
+@media screen and (min-width: 751px) {
+    .pc_i {
+        display: inline;
+    }
+    .sp_i {
+        display: none;
+    }
+}
+@media screen and (max-width: 750px) {
+  .pc_i {
+      display: none;
+  }
+  .sp_i {
+      display: inline;
+  }
+  #anthology .art{
+    left: calc(50% + 220px);
+  }
+  #anthology #page{
+    background:
+    url("../images/anthology/bg_mainvisual_sp.png") no-repeat 50% 0/100% auto,
+    url("../images/anthology/bg_main.png");
+  }
+    #anthology header,
+    #anthology #global-navi{
+      height: auto;
+    }
+    #anthology header{
+      padding: 10px 0 0 20px;
+    }
+    #anthology #special-section {
+    padding: 0 0 100px 0;
+}
+    #anthology h1{
+      width: 241px;
+    }
+    #anthology h1 img{
+      width: 100%;
+      height: auto;
+    }
+    #anthology h2{
+      padding: 64px 0 0 0;
+    }
+    #anthology .art{
+      top: 864px;
+    }
+    #anthology .btn {
+      width: 450px;
+    }
+    #anthology .btn a{
+      line-height: 80px;
+      font-size: 30px;
+    }
+
+    #anthology .anthology-list {
+        width: 670px;
+    }
+
+    #anthology .anthology-list li {
+        background:linear-gradient(180deg,#fff 0%,#fff 50%,#f8f8f9 50%,#f8f8f9 100%);
+        -ms-flex-preferred-size: 325px;
+        flex-basis: 325px;
+        padding: 20px 0 20px 20px;
+        margin: 0 0 20px;
+    }
+    #anthology .anthology-list li .thumb {
+      width: 120px;
+      height: 120px;
+      margin: 0 15px 0 0;
+    }
+    #anthology .anthology-list li .detail .author{
+      margin: 0 0 2px 0;
+      font-size: 14px;
+      font-weight: 700;
+      color: #b7bdc4;
+      letter-spacing: 0.05em;
+    }
+    #anthology .anthology-list li .detail .name{
+      margin: 0 0 20px 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: #444466;
+    }
+    #anthology .anthology-list li .detail .logo{
+      position: absolute;
+      top: 75%;
+      left: 155px;
+      transform: translateY(-50%);
+    }
+    #anthology .anthology-list li .detail .logo img{
+      width: 100%;
+    }
+    #anthology .anthology-list li:nth-child(-n+10) .detail .logo{
+      width: 131.6px;
+    }
+    #anthology .anthology-list li:nth-child(-n+8) .detail .logo{
+      width: 148px;
+    }
+    #anthology .anthology-list li:nth-child(-n+6) .detail .logo{
+      width: 96px;
+    }
+    #anthology .anthology-list li:nth-child(-n+4) .detail .logo{
+      width: 115px;
+    }
+    #anthology .anthology-list li:nth-child(-n+2) .detail .logo{
+      width: 104px;
+    }
+    #anthology .anthology-image-list{
+      width: 728px;
+    }
+    #anthology .modal .modal-container .modal-header .modal-close{
+      width: 40px;
+      height: 40px;
+      right: calc(50% - 360px);
+    }
+    #anthology .modal .modal-container .modal-header .modal-close span{
+      width: 40px;
+      height: 2px;
+      background: #000;
+      display: block;
+    }
+    #anthology .modal .modal-container .modal-content .top .logo {
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    #anthology .modal .modal-content .top .author {
+        font-size: 36px;
+    }
+    #anthology .modal .modal-nav li.modal-nav-prev{
+      display: none;
+      left: calc(50% - 354px);
+      transform: translateY(-50%) rotate(180deg);
+    }
+    #anthology .modal .modal-nav li.modal-nav-next{
+      display: none;
+      right: calc(50% - 354px);
+    }
+  }

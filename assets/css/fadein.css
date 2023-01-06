@@ -1,0 +1,5 @@
+.fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s linear, transform 1s ease-out;
+}

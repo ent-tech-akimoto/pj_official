@@ -1,0 +1,532 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 751px) {
+    #music-section {
+        padding-bottom: 50px;
+    }
+    #music-section .list-music li .true p {
+        font-size: 14px;
+    }
+}
+
+.true {
+    display: block;
+    float: right;
+    margin: 5px 0 0;
+}
+
+#music-section .list-music li .true p {
+    font-size: 14px;
+}
+
+.false {
+    display: none;
+}
+
+#music-section h3 {
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#music-section h3.h3_01 {
+    background: linear-gradient(to right, #00ffdd 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#music-section h3.h3_02 {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #00ffdd 100%);
+}
+
+#music-section h3 span {
+    line-height: 1;
+}
+
+#music-section h3 small {
+    display: block;
+}
+
+.sub-navi {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.sub-navi .sub-navi-list {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sub-navi .sub-navi-list li {
+    width: auto;
+    cursor: pointer;
+}
+
+
+.sub-navi .sub-navi-list li img {
+    height: 100%;
+    max-height: 100%;
+    width: auto;
+    opacity: 0.2;
+}
+
+.sub-navi .sub-navi-list li.active img {
+    height: 100%;
+    max-height: 100%;
+    width: auto;
+    opacity: 1;
+}
+
+.list-music li {
+    display: none;
+}
+
+.list-music.all li {
+    display: block!important;
+}
+
+.list-music.virtualsinger li.virtualSinger,
+.list-music.leoneed li.leoneed,
+.list-music.moremore li.moremore,
+.list-music.vivid li.vivid,
+.list-music.wonder li.wonder,
+.list-music.nightcord li.nightcord {
+    display: block!important;
+}
+
+@media screen and (min-width: 751px) {
+    .sub-navi .sub-navi-list li.all {
+        padding: 22px 0;
+        height: 72px;
+    }
+    .sub-navi .sub-navi-list li.all img {
+        width: 69px;
+        height: 24px;
+    }
+    #music-section h3 {
+        height: 178px;
+        padding: 50px 0;
+        margin: 0 0 60px;
+    }
+
+    #music-section h3 span {
+        font-size: 60px;
+    }
+
+    #music-section h3 small {
+        font-size: 20px;
+    }
+    .sub-navi {
+        padding: 22px 0;
+        margin: 0 0 50px;
+    }
+    .sub-navi .sub-navi-list {
+        width: 1200px;
+        margin: 0 auto;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .sub-navi .sub-navi-list li {
+        height: 63px;
+    }
+    .sub-navi .sub-navi-list li a.sp-anchor {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .true {
+        display: block;
+        float: none;
+        margin: 16px 0 0;
+    }
+    #music-section h3 {
+        height: 178px;
+        padding: 50px 0;
+        margin: 0 0 40px;
+    }
+
+    #music-section h3 span {
+        font-size: 60px;
+    }
+
+    #music-section h3 small {
+        font-size: 20px;
+    }
+    .sub-navi {
+        margin: 0 0 40px;
+        padding: 0 40px;
+    }
+    .sub-navi .sub-navi-list {
+        padding: 40px 0 32px;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-between;
+    }
+    .sub-navi .sub-navi-list li {
+        width: 178px;
+        margin: 0 0 15px;
+    }
+
+    .sub-navi .sub-navi-list li img {
+        width: 100%;
+        height: auto;
+        max-height: auto;
+    }
+
+    .sub-navi .sub-navi-list li.active img {
+        width: 100%;
+        height: auto;
+        max-height: auto;
+        opacity: 1;
+    }
+
+    .sub-navi .sub-navi-list li a.pc-anchor {
+        display: none;
+    }
+
+    .sub-navi .sub-navi-list li:first-child {
+        width: 100%;
+        height: auto;
+        max-height: auto;
+    }
+
+    .sub-navi .sub-navi-list li:nth-child(5),.sub-navi .sub-navi-list li:nth-child(6),.sub-navi .sub-navi-list li:nth-child(7) {
+        margin: 0;
+    }
+
+    .sub-navi .sub-navi-list li.all img {
+
+    }
+}
+
+#music-section .read {
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+@media screen and (max-width: 750px) {
+    #music-section .read {
+        margin: 0 0 42px;
+    }
+}
+
+#music-section .list-song {
+    margin: 0 auto;
+    position: relative;
+}
+
+#music-section .list-song li {
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#music-section .list-song li .thumb {
+    width: 480px;
+    height: 246px;
+    overflow: hidden;
+}
+
+#music-section .list-song li .thumb img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#music-section .list-song li .title, #music-section .list-song li .artist {
+    font-weight: 800;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#music-section .list-song li .title {
+    background: #444467;
+    margin: 4px 4px 0;
+    min-height: 52px;
+    line-height: 1.25;
+}
+
+#music-section .list-song li .title span {
+    color: #fff;
+    font-size: 20px;
+    padding: 0 16px;
+}
+
+#music-section .list-song li .title span.line-2 {
+    font-size: 16px;
+}
+
+#music-section .list-song li .artist {
+    font-size: 32px;
+    line-height: 1.0;
+    min-height: 80px;
+}
+
+#music-section .list-song li .artist span {
+    padding: 0 16px;
+}
+
+#music-section .list-song li .detail {
+    background: #00ffdd;
+    transform: skew(-18deg);
+    position: absolute;
+}
+
+#music-section .list-song li .detail a {
+    color: #444466;
+    font-family: 'Montserrat', sans-serif;
+    transform: skew(18deg);
+    display: block;
+}
+
+@media screen and (min-width: 751px) {
+    #music-section .list-song {
+        width: 1000px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    #music-section .list-song li {
+        -ms-flex-preferred-size: 480px;
+        flex-basis: 480px;
+        margin: 0 0 90px;
+    }
+
+    #music-section .list-song li .detail {
+        bottom: -30px;
+        right: -5px;
+    }
+
+    #music-section .list-song li .detail a {
+        font-size: 18px;
+        line-height: 40px;
+        padding: 0 48px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #music-section .list-song {
+        width: 480px;
+    }
+
+    #music-section .list-song li {
+        margin: 0 0 65px;
+    }
+
+    #music-section .list-song li .detail {
+        bottom: -25px;
+        right: -5px;
+    }
+
+    #music-section .list-song li .detail a {
+        font-size: 1.8rem;
+        line-height: 35px;
+        padding: 0 40px;
+    }
+}
+
+#music-section .list-music {
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#music-section .list-music li {
+    background: #fff;
+    border: 2px solid #00ffdd;
+    text-align: left;
+}
+
+#music-section .list-music li h4 {
+    font-weight: bold;
+}
+
+#music-section .list-music li p {
+    font-size: 18px;
+    position: relative;
+}
+
+#music-section .list-music li p span {
+    padding-left: 55px;
+}
+
+#music-section .list-music li p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    color: #b7bdc4;
+}
+
+#music-section .list-music li p.lyric:before {
+    content: "作詞";
+}
+
+#music-section .list-music li p.song:before {
+    content: "作曲";
+}
+
+@media screen and (min-width: 751px) {
+    #music-section .list-music {
+        width: 1000px;
+    }
+
+    #music-section .list-music li {
+        background: url("../images/system/bg_list.gif") #fff no-repeat center bottom;
+        -ms-flex-preferred-size: 490px;
+        flex-basis: 490px;
+        padding: 20px;
+        margin: 0 0 20px;
+    }
+
+    #music-section .list-music li h4 {
+        font-size: 24px;
+        margin: 0 0 16px;
+    }
+
+    #music-section .list-music .img {
+        padding: 60px 0 35px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #music-section .list-music {
+        width: 670px;
+    }
+
+    #music-section .list-music li {
+        background: url("../images/system/bg_list_sp.gif") #fff no-repeat center bottom;
+        -ms-flex-preferred-size: 325px;
+        flex-basis: 325px;
+        padding: 20px;
+        margin: 0 0 20px;
+    }
+
+    #music-section .list-music li h4 {
+        font-size: 2.6rem;
+        margin: 0 0 16px;
+    }
+}
+
+#music-section .text-more {
+    font-size: 56px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px 0;
+}
+
+#modal {
+    margin: 0 auto;
+}
+
+#modal h1 {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    line-height: 1;
+}
+
+#modal .modal-page {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 0 0 25px;
+    margin: 0 auto;
+}
+
+#modal .modal-page a {
+    color: #ff55aa;
+}
+
+#modal .modal-page ul li .airtist {
+    text-align: center;
+}
+
+#modal .modal-page ul li .airtist span {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+#modal .modal-page ul li .text {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+@media screen and (max-width: 750px) {
+    #modal .modal-page ul li .text {
+        font-size: 24px;
+        line-height: 1.75;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    #modal.comment {
+        width: 1200px;
+    }
+
+    #modal.profile {
+        width: 900px;
+    }
+
+    #modal.profile .modal-page ul li {
+        -ms-flex-preferred-size: 700px;
+        flex-basis: 700px;
+    }
+
+    #modal .modal-page {
+        padding: 100px 100px;
+    }
+
+    #modal .modal-page ul {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    #modal .modal-page ul li {
+        -ms-flex-preferred-size: 460px;
+        flex-basis: 460px;
+    }
+
+    #modal .modal-page ul li .airtist span {
+        font-size: 32px;
+        margin: 20px 0 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #modal {
+        width: 670px;
+    }
+
+    #modal .modal-page {
+        padding: 55px 35px;
+    }
+
+    #modal .modal-page ul li .airtist span {
+        font-size: 38px;
+        margin: 20px 0 30px;
+    }
+
+    #modal .modal-page ul li:not(:first-child) {
+        border-top: 2px solid #00ffdd;
+        padding: 45px 0 0;
+        margin: 45px 0 0;
+    }
+}
