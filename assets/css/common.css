@@ -303,7 +303,8 @@ header #global-navi nav ul li a {
 #sysrem header #global-navi nav ul li.navi-04 a,
 #music header #global-navi nav ul li.navi-05 a,
 #special header #global-navi nav ul li.navi-06 a,
-#faq header #global-navi nav ul li.navi-07 a {
+#faq header #global-navi nav ul li.navi-07 a,
+#note header #global-navi nav ul li.navi-08 a {
     color: #ff55aa;
 }
 
