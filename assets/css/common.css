@@ -159,7 +159,7 @@ header #global-navi nav ul li a {
     header #global-navi nav {
         background: #00ffdd;
         width: 100%;
-        height: 110vh;
+        padding: 0 0 30px;
         position: absolute;
         top: 0;
         right: -100%;
@@ -169,7 +169,7 @@ header #global-navi nav ul li a {
 
     header #global-navi nav h1 {
         width: 70%;
-        padding: 140px 0 0;
+        padding: 110px 0 0;
         margin: 0 auto;
     }
 
@@ -181,7 +181,7 @@ header #global-navi nav ul li a {
 
     header #global-navi nav .global-navi-menu {
         width: 100%;
-        padding: 40px 0 50px;
+        padding: 40px 0 30px;
     }
 
     header #global-navi nav .global-navi-menu li {
@@ -248,14 +248,14 @@ header #global-navi nav ul li a {
         max-width: 1600px;
         min-width: 1200px;
         height: 76px;
-        padding: 0 20px;
+        padding: 0 20px 0 15px;
         margin: 0 auto;
         overflow: hidden;
         clear: both;
     }
 
     header #global-navi h1 {
-        width: 320px;
+        width: 318px;
         position: absolute;
         top: 12px;
     }
@@ -282,11 +282,11 @@ header #global-navi nav ul li a {
     }
 
     header #global-navi nav .global-navi-menu li:not(:first-child) {
-        margin-left: 30px;
+        margin-left: 22px;
     }
 
     header #global-navi nav .global-navi-menu li a {
-        font-size: 23px;
+        font-size: 21px;
         line-height: 56px;
         display: block;
     }

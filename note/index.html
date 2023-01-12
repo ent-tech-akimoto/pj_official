@@ -13,7 +13,7 @@
     })(window, document, 'script', 'dataLayer', 'GTM-WFZ2TXP');</script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
-  <title>NOTE ｜ プロジェクトセカイ カラフルステージ！ feat.初音ミク</title>
+  <title>プロセカNOTE ｜ プロジェクトセカイ カラフルステージ！ feat.初音ミク</title>
   <meta name="viewport" content="width=750" />
   <meta name="keywords" content="初音,ミク,プロジェクト,セカイ,ボカロ,VOCALOID,ボーカロイド,新作,スマホ,ゲーム,ティザー" />
   <meta name="description"
@@ -103,7 +103,7 @@
     </header>
     <!-- /header -->
     <section id="note-section">
-      <h2><span>NOTE</span></h2>
+      <h2><span><em>プロセカ</em>NOTE</span></h2>
       <div class="cet-block">
         <h3 class="h3_01"><span>ステータス</span></h3>
         <ul class="cet-block--list slider-list">
@@ -295,44 +295,35 @@
   <script src="/assets/js/parallax.js"></script>
   <script src="/assets/js/slick.min.js"></script>
   <script>
-    var headerH = $("h2").outerHeight(true);//headerの高さを取得    
+    var headerH = $("h2").outerHeight(true);
 
-    //スクロール途中からヘッダーの高さを変化させるための設定を関数でまとめる
     function FixedAnime() {
-      //ヘッダーの高さを取得
       var scroll = $(window).scrollTop();
-      if (scroll >= headerH){//ヘッダーの高さを超えたら
-            $('.cet-block').addClass('fixed');//.cet-blockについているfixedというクラス名を付与
+      if (scroll >= headerH){
+            $('.cet-block').addClass('fixed');
       }else{
-            $('.cet-block').removeClass('fixed');//fixedというクラス名を除去
+            $('.cet-block').removeClass('fixed');
       }    
     }
-
-    // 画面をスクロールをしたら動かしたい場合の記述
     $(window).scroll(function () {
-      FixedAnime();//スクロール途中からヘッダーの高さを変化させる関数を呼ぶ
+      FixedAnime();
     });
     function checkBreakPoint() {
       w = $(window).width();
       if (w <= 750) {
-        // スマホ向け（767px以下のとき）
         $('.slider-list').not('.slick-initialized').slick({
-          //スライドさせる
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: false,
           arrows: true
         });
       } else {
-        // PC向け
         $('.slider-list.slick-initialized').slick('unslick');
       }
     }
-    // ウインドウがリサイズする度にチェック
     $(window).resize(function(){
       checkBreakPoint();
     });
-    // 初回チェック
     checkBreakPoint();
   </script>
   <!-- Google Tag Manager (noscript) -->
