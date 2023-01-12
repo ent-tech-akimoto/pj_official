@@ -105,7 +105,7 @@ h2 span em {
   .slick-track .slick-slide:not(:last-child) {
     padding: 0 20px 0 0;
   }
-  .slider-list .slick-slide.slick-current .cet-block--list-btn {
+  .slider-list .slick-slide .cet-block--list-btn.is-active {
     background: #ff55aa;
   }
 }
