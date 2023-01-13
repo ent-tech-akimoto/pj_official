@@ -184,6 +184,7 @@ h2 span em {
 
 .card-block {
   margin-top: 80px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 751px) {
@@ -655,12 +656,13 @@ h2 span em {
 }
 
 .icon-loading {
-  padding: 80px 0 100px;
+  cursor: pointer;
+  padding: 20px 0 100px;
 }
 
 @media screen and (min-width: 751px) {
   .icon-loading {
-    padding: 80px 0 102px;
+    padding: 20px 0 102px;
   }
 }
 

@@ -11,6 +11,34 @@ $(".card-block--contents-acd").on("click", function (e) {
   $(this).parent('.card-block--contents').children().first().css("display", "block");
 });
 
+
+
+// カード数処理
+var show_num = 10;
+var show_card = function () {
+  $(".card-block--item.js-show").each(function (index, element) {
+    // element == this
+    if (index >= show_num) {
+      $(this).hide();
+    } else {
+      $(this).show();
+    }
+  });
+
+  if ($(".card-block--item.js-show").length <= show_num) {
+    $(".js-more").hide()
+  } else {
+    $(".js-more").show()
+  }
+}
+show_card();
+
+$(".js-more").on("click", function (e) {
+  e.preventDefault();
+  show_num += 10;
+  show_card();
+});
+
 // ラベル処理
 var current_status = "status-all";
 var current_cat = "cat-all";
@@ -28,7 +56,10 @@ var check_label = function () {
       $(this).hide();
     }
   });
+  show_num = 10;
+  show_card();
 }
+check_label();
 
 $(".js-status").on("click", function (e) {
   e.preventDefault();
@@ -44,30 +75,4 @@ $(".js-cat").on("click", function (e) {
   $(this).addClass("is-active");
   current_cat = $(this).data("cat");
   check_label()
-});
-
-// カード数処理
-var show_num = 10;
-var show_card = function () {
-  $(".card-block--item").each(function (index, element) {
-    // element == this
-    if (index >= show_num) {
-      $(this).hide();
-    } else {
-      $(this).show();
-    }
-  });
-
-  if ($(".card-block--item").length <= show_num) {
-    $(".js-more").hide()
-  } else {
-    $(".js-more").show()
-  }
-}
-show_card();
-
-$(".js-more").on("click", function (e) {
-  e.preventDefault();
-  show_num += 10;
-  show_card();
 });
