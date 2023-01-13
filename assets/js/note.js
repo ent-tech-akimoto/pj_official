@@ -1,14 +1,8 @@
 // 省略処理
-$(".card-block--contents").each(function (index, element) {
-  // element == this
-  $(this).children().first().css("display", "block");
-});
-
 $(".card-block--contents-acd").on("click", function (e) {
   e.preventDefault();
   $(this).toggleClass("is-open");
   $(this).parent('.card-block--contents').toggleClass("omit");
-  $(this).parent('.card-block--contents').children().first().css("display", "block");
 });
 
 
@@ -26,9 +20,9 @@ var show_card = function () {
   });
 
   if ($(".card-block--item.js-show").length <= show_num) {
-    $(".js-more").hide()
+    $(".js-more img").hide()
   } else {
-    $(".js-more").show()
+    $(".js-more img").show()
   }
 }
 show_card();
