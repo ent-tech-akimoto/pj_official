@@ -3,14 +3,22 @@
 
 <head>
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WFZ2TXP');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WFZ2TXP');
+  </script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <title>プロセカNOTE ｜ プロジェクトセカイ カラフルステージ！ feat.初音ミク</title>
@@ -107,24 +115,24 @@
       <div class="cet-block">
         <h3 class="h3_01"><span>ステータス</span></h3>
         <ul class="cet-block--list slider-list">
-          <li class="cet-block--list-btn status-all is-active"><span>すべて</span></li>
-          <li class="cet-block--list-btn done"><span>回答/解決済</span></li>
-          <li class="cet-block--list-btn in_progress"><span>進行中</span></li>
-          <li class="cet-block--list-btn consideration"><span>検討中</span></li>
-          <li class="cet-block--list-btn pending"><span>保留中</span></li>
+          <li class="cet-block--list-btn js-status is-active" data-status="status-all"><span>すべて</span></li>
+          <li class="cet-block--list-btn js-status" data-status="done"><span>回答/解決済</span></li>
+          <li class="cet-block--list-btn js-status" data-status="in_progress"><span>進行中</span></li>
+          <li class="cet-block--list-btn js-status" data-status="consideration"><span>検討中</span></li>
+          <li class="cet-block--list-btn js-status" data-status="pending"><span>保留中</span></li>
         </ul>
         <h3 class="h3_02"><span>カテゴリ</span></h3>
         <ul class="cet-block--list slider-list">
-          <li class="cet-block--list-btn cat-all is-active"><span>すべて</span></li>
-          <li class="cet-block--list-btn music"><span>楽曲</span></li>
-          <li class="cet-block--list-btn feature"><span>機能</span></li>
-          <li class="cet-block--list-btn card"><span>カード</span></li>
-          <li class="cet-block--list-btn mv"><span>MV</span></li>
-          <li class="cet-block--list-btn character"><span>キャラクター</span></li>
+          <li class="cet-block--list-btn js-cat is-active" data-cat="cat-all"><span>すべて</span></li>
+          <li class="cet-block--list-btn js-cat" data-cat="music"><span>楽曲</span></li>
+          <li class="cet-block--list-btn js-cat" data-cat="feature"><span>機能</span></li>
+          <li class="cet-block--list-btn js-cat" data-cat="card"><span>カード</span></li>
+          <li class="cet-block--list-btn js-cat" data-cat="mv"><span>MV</span></li>
+          <li class="cet-block--list-btn js-cat" data-cat="character"><span>キャラクター</span></li>
         </ul>
       </div>
       <ul class="card-block">
-        <li class="card-block--item">
+        <li class="card-block--item" data-status="consideration" data-cat="card">
           <div class="card-block--head">
             <div class="card-block--head-content">
               <p class="card-block--head-content__cat card"></p>
@@ -149,7 +157,7 @@
             </p>
           </div>
         </li>
-        <li class="card-block--item">
+        <li class="card-block--item" data-status="done" data-cat="character">
           <div class="card-block--head">
             <div class="card-block--head-content">
               <p class="card-block--head-content__cat character"></p>
@@ -172,12 +180,12 @@
             <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
               <span>詳細はこちら</span>
             </a>
-            <p class="card-block--contents-acd is-open">
+            <p class="card-block--contents-acd">
               <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
             </p>
           </div>
         </li>
-        <li class="card-block--item">
+        <li class="card-block--item" data-status="in_progress" data-cat="music">
           <div class="card-block--head">
             <div class="card-block--head-content">
               <p class="card-block--head-content__cat music"></p>
@@ -193,7 +201,7 @@
               <li class="card-block--head-date__item update"><span></span></li>
             </ul>
           </div>
-          <div class="card-block--contents">
+          <div class="card-block--contents omit">
             <p class="card-block--contents-text">
               絵名と愛莉のクッションはお揃いです。<br>仲が良い2人は、中学時代によく時間があるときに一緒にぶらぶらと買い物をすることがあり、その時にこの黄色い猫のクッションをお揃いで買っています。
             </p>
@@ -201,12 +209,12 @@
             <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
               <span>詳細はこちら</span>
             </a>
-            <p class="card-block--contents-acd is-open">
+            <p class="card-block--contents-acd">
               <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
             </p>
           </div>
         </li>
-        <li class="card-block--item">
+        <li class="card-block--item" data-status="pending" data-cat="feature">
           <div class="card-block--head">
             <div class="card-block--head-content">
               <p class="card-block--head-content__cat feature"></p>
@@ -222,7 +230,7 @@
               <li class="card-block--head-date__item update"><span></span></li>
             </ul>
           </div>
-          <div class="card-block--contents">
+          <div class="card-block--contents omit">
             <img class="card-block--contents-img" src="../assets/images/note/img_02.jpg" alt="">
             <p class="card-block--contents-text">
               Leo/needの中で一番100m走のタイムが早いのは穂波で、次いで志歩、一歌、咲希の順となります。それぞれの詳細については以下の通りです。<br>
@@ -235,13 +243,361 @@
             <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
               <span>詳細はこちら</span>
             </a>
-            <p class="card-block--contents-acd is-open">
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="consideration" data-cat="card">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat card"></p>
+              <h4 class="card-block--head-content__tit">
+                他ユニットのキャラクターが歌唱する楽曲の実装予定はありますか？
+              </h4>
+            </div>
+            <div class="card-block--head-status consideration">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span>2022.2.22</span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <p class="card-block--contents-text">
+              他ユニット同士のキャラクター達による歌唱について、基本運営の中での実装は予定しておりませんが、何か特別なタイミング（過去の例として2022年エイプリルフール、カップヌードルタイアップなど）での実装を検討できればと考えています。
+            </p>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="done" data-cat="character">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat character"></p>
+              <h4 class="card-block--head-content__tit">
+                ストーリー内のキャラクターの衣装を増やして欲しい
+              </h4>
+            </div>
+            <div class="card-block--head-status done">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span></span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <p class="card-block--contents-text">
+              大変申し訳ございませんが、現在追加の予定はございません。私たちも増やしたいと考えてはおり、一時期は夏服など季節に合わせた衣装のデザイン制作を進めていたこともございますが、3周年の学年上げに伴う衣装デザインの対応を最優先としております。ご理解いただけますと幸いです。
+            </p>
+            <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
+              <span>詳細はこちら</span>
+            </a>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="in_progress" data-cat="music">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat music"></p>
+              <h4 class="card-block--head-content__tit">
+                絵名と愛莉の部屋にあるクッションはお揃いですか？
+              </h4>
+            </div>
+            <div class="card-block--head-status in_progress">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span></span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <p class="card-block--contents-text">
+              絵名と愛莉のクッションはお揃いです。<br>仲が良い2人は、中学時代によく時間があるときに一緒にぶらぶらと買い物をすることがあり、その時にこの黄色い猫のクッションをお揃いで買っています。
+            </p>
+            <img class="card-block--contents-img" src="../assets/images/note/img_01.jpg" alt="">
+            <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
+              <span>詳細はこちら</span>
+            </a>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="pending" data-cat="feature">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat feature"></p>
+              <h4 class="card-block--head-content__tit">
+                Leo/needの中で100m走のタイムが1番速いのは誰ですか？
+              </h4>
+            </div>
+            <div class="card-block--head-status pending">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span></span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <img class="card-block--contents-img" src="../assets/images/note/img_02.jpg" alt="">
+            <p class="card-block--contents-text">
+              Leo/needの中で一番100m走のタイムが早いのは穂波で、次いで志歩、一歌、咲希の順となります。それぞれの詳細については以下の通りです。<br>
+              ・穂波：文武両道でもともと身体能力が高く、足も速いため4人の中では1番手です。<br>
+              ・志歩：足の速さは平均より速いぐらいです。<br>
+              ・一歌：足の速さは平均ぐらいです。<br>
+              ・咲希：病気で入院していたため運動がそこまで得意ではなく、足の速さは4人の中では4番手です。
+            </p>
+            <img class="card-block--contents-img" src="../assets/images/note/img_03.jpg" alt="">
+            <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
+              <span>詳細はこちら</span>
+            </a>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="consideration" data-cat="card">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat card"></p>
+              <h4 class="card-block--head-content__tit">
+                他ユニットのキャラクターが歌唱する楽曲の実装予定はありますか？
+              </h4>
+            </div>
+            <div class="card-block--head-status consideration">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span>2022.2.22</span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <p class="card-block--contents-text">
+              他ユニット同士のキャラクター達による歌唱について、基本運営の中での実装は予定しておりませんが、何か特別なタイミング（過去の例として2022年エイプリルフール、カップヌードルタイアップなど）での実装を検討できればと考えています。
+            </p>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="done" data-cat="character">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat character"></p>
+              <h4 class="card-block--head-content__tit">
+                ストーリー内のキャラクターの衣装を増やして欲しい
+              </h4>
+            </div>
+            <div class="card-block--head-status done">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span></span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <p class="card-block--contents-text">
+              大変申し訳ございませんが、現在追加の予定はございません。私たちも増やしたいと考えてはおり、一時期は夏服など季節に合わせた衣装のデザイン制作を進めていたこともございますが、3周年の学年上げに伴う衣装デザインの対応を最優先としております。ご理解いただけますと幸いです。
+            </p>
+            <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
+              <span>詳細はこちら</span>
+            </a>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="in_progress" data-cat="music">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat music"></p>
+              <h4 class="card-block--head-content__tit">
+                絵名と愛莉の部屋にあるクッションはお揃いですか？
+              </h4>
+            </div>
+            <div class="card-block--head-status in_progress">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span></span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <p class="card-block--contents-text">
+              絵名と愛莉のクッションはお揃いです。<br>仲が良い2人は、中学時代によく時間があるときに一緒にぶらぶらと買い物をすることがあり、その時にこの黄色い猫のクッションをお揃いで買っています。
+            </p>
+            <img class="card-block--contents-img" src="../assets/images/note/img_01.jpg" alt="">
+            <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
+              <span>詳細はこちら</span>
+            </a>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="pending" data-cat="feature">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat feature"></p>
+              <h4 class="card-block--head-content__tit">
+                Leo/needの中で100m走のタイムが1番速いのは誰ですか？
+              </h4>
+            </div>
+            <div class="card-block--head-status pending">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span></span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <img class="card-block--contents-img" src="../assets/images/note/img_02.jpg" alt="">
+            <p class="card-block--contents-text">
+              Leo/needの中で一番100m走のタイムが早いのは穂波で、次いで志歩、一歌、咲希の順となります。それぞれの詳細については以下の通りです。<br>
+              ・穂波：文武両道でもともと身体能力が高く、足も速いため4人の中では1番手です。<br>
+              ・志歩：足の速さは平均より速いぐらいです。<br>
+              ・一歌：足の速さは平均ぐらいです。<br>
+              ・咲希：病気で入院していたため運動がそこまで得意ではなく、足の速さは4人の中では4番手です。
+            </p>
+            <img class="card-block--contents-img" src="../assets/images/note/img_03.jpg" alt="">
+            <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
+              <span>詳細はこちら</span>
+            </a>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="consideration" data-cat="card">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat card"></p>
+              <h4 class="card-block--head-content__tit">
+                他ユニットのキャラクターが歌唱する楽曲の実装予定はありますか？
+              </h4>
+            </div>
+            <div class="card-block--head-status consideration">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span>2022.2.22</span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <p class="card-block--contents-text">
+              他ユニット同士のキャラクター達による歌唱について、基本運営の中での実装は予定しておりませんが、何か特別なタイミング（過去の例として2022年エイプリルフール、カップヌードルタイアップなど）での実装を検討できればと考えています。
+            </p>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="done" data-cat="character">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat character"></p>
+              <h4 class="card-block--head-content__tit">
+                ストーリー内のキャラクターの衣装を増やして欲しい
+              </h4>
+            </div>
+            <div class="card-block--head-status done">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span></span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <p class="card-block--contents-text">
+              大変申し訳ございませんが、現在追加の予定はございません。私たちも増やしたいと考えてはおり、一時期は夏服など季節に合わせた衣装のデザイン制作を進めていたこともございますが、3周年の学年上げに伴う衣装デザインの対応を最優先としております。ご理解いただけますと幸いです。
+            </p>
+            <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
+              <span>詳細はこちら</span>
+            </a>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="in_progress" data-cat="music">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat music"></p>
+              <h4 class="card-block--head-content__tit">
+                絵名と愛莉の部屋にあるクッションはお揃いですか？
+              </h4>
+            </div>
+            <div class="card-block--head-status in_progress">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span></span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <p class="card-block--contents-text">
+              絵名と愛莉のクッションはお揃いです。<br>仲が良い2人は、中学時代によく時間があるときに一緒にぶらぶらと買い物をすることがあり、その時にこの黄色い猫のクッションをお揃いで買っています。
+            </p>
+            <img class="card-block--contents-img" src="../assets/images/note/img_01.jpg" alt="">
+            <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
+              <span>詳細はこちら</span>
+            </a>
+            <p class="card-block--contents-acd">
+              <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
+            </p>
+          </div>
+        </li>
+        <li class="card-block--item" data-status="pending" data-cat="feature">
+          <div class="card-block--head">
+            <div class="card-block--head-content">
+              <p class="card-block--head-content__cat feature"></p>
+              <h4 class="card-block--head-content__tit">
+                Leo/needの中で100m走のタイムが1番速いのは誰ですか？
+              </h4>
+            </div>
+            <div class="card-block--head-status pending">
+              <p class="card-block--head-status__text"><span></span></p>
+            </div>
+            <ul class="card-block--head-date">
+              <li class="card-block--head-date__item publishe"><span>2022.2.22</span></li>
+              <li class="card-block--head-date__item update"><span></span></li>
+            </ul>
+          </div>
+          <div class="card-block--contents omit">
+            <img class="card-block--contents-img" src="../assets/images/note/img_02.jpg" alt="">
+            <p class="card-block--contents-text">
+              Leo/needの中で一番100m走のタイムが早いのは穂波で、次いで志歩、一歌、咲希の順となります。それぞれの詳細については以下の通りです。<br>
+              ・穂波：文武両道でもともと身体能力が高く、足も速いため4人の中では1番手です。<br>
+              ・志歩：足の速さは平均より速いぐらいです。<br>
+              ・一歌：足の速さは平均ぐらいです。<br>
+              ・咲希：病気で入院していたため運動がそこまで得意ではなく、足の速さは4人の中では4番手です。
+            </p>
+            <img class="card-block--contents-img" src="../assets/images/note/img_03.jpg" alt="">
+            <a class="card-block--contents-link" href="https://pjsekai.sega.jp/news/article/index.html" target="_blank">
+              <span>詳細はこちら</span>
+            </a>
+            <p class="card-block--contents-acd">
               <img class="card-block--contents-acd__icon" src="../assets/images/note/icon_arrow.svg" alt="">
             </p>
           </div>
         </li>
       </ul>
-      <p class="icon-loading"><img class="card-block--contents-img" src="../assets/images/note/icon_loading.svg" alt="読み込み中"></p>
+
     </section>
     <footer>
       <div class="foot-ui">
@@ -272,7 +628,7 @@
           記載の商品名および社名は各社の登録商標です。<br>
           本サイトで使用されている 画像、文章、情報、音声、動画等は株式会社セガまたはその関連会社の著作権により保護されております。<br>
           著作権者の許可なく、複製、転載等の行為を禁止いたします。
-        </div>　　　　
+        </div>
       </div>
     </footer>
     <!-- /footer -->
@@ -294,20 +650,22 @@
   <script src="/assets/js/shared.js"></script>
   <script src="/assets/js/parallax.js"></script>
   <script src="/assets/js/slick.min.js"></script>
+  <script src="/assets/js/note.js"></script>
   <script>
     var headerH = $("h2").outerHeight(true);
 
     function FixedAnime() {
       var scroll = $(window).scrollTop();
-      if (scroll >= headerH){
-            $('.cet-block').addClass('fixed');
-      }else{
-            $('.cet-block').removeClass('fixed');
-      }    
+      if (scroll >= headerH) {
+        $('.cet-block').addClass('fixed');
+      } else {
+        $('.cet-block').removeClass('fixed');
+      }
     }
     $(window).scroll(function () {
       FixedAnime();
     });
+
     function checkBreakPoint() {
       w = $(window).width();
       if (w <= 750) {
@@ -321,7 +679,7 @@
         $('.slider-list.slick-initialized').slick('unslick');
       }
     }
-    $(window).resize(function(){
+    $(window).resize(function () {
       checkBreakPoint();
     });
     checkBreakPoint();
