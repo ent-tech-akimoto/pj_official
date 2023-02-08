@@ -34,16 +34,18 @@ $(".js-more").on("click", function (e) {
 });
 
 // ラベル処理
-var current_status = "status-all";
+var current_year = "year-all";
 var current_cat = "cat-all";
 var check_label = function () {
   $(".card-block--item").each(function (index, element) {
-    var target_status = $(this).data("status");
+    var target_year = $(this).data("year");
+    var date = new Date(target_year);
+    target_year = date.getFullYear();
     var target_cat = $(this).data("cat");
-    var bloom_status = Boolean(target_status == current_status || current_status == "status-all");
+    var bloom_year = Boolean(target_year == current_year || current_year == "year-all");
     var bloom_cat = Boolean(target_cat == current_cat || current_cat == "cat-all");
     $(this).removeClass("js-show");
-    if (bloom_status && bloom_cat) {
+    if (bloom_year && bloom_cat) {
       $(this).show();
       $(this).addClass("js-show");
     } else {
@@ -55,11 +57,12 @@ var check_label = function () {
 }
 check_label();
 
-$(".js-status").on("click", function (e) {
+$(".js-year").on("click", function (e) {
   e.preventDefault();
-  $(".js-status").removeClass("is-active");
+  $(".js-year").removeClass("is-active");
   $(this).addClass("is-active");
-  current_status = $(this).data("status");
+  current_year = $(this).data("year");
+
   check_label()
 });
 
